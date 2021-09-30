@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First Web App | Login</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-image: url("images/bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      #loginBox {
+        position: absolute;
+        left: 35%;
+        right: 35%;
+        top: 30%;
+        bottom: 30%;
+        background: white;
+        padding: 10px;
+      }
+      #loginForm {
+        display: flex;
+        flex-direction: column;
+      }
+      .myInput {
+        font-size: 16px;
+        padding: 3px 5px;
+        border: none;
+        border-bottom: 1px solid #dfdfdf;
+        margin: 10px 5%;
+      }
+      .myInput:active,
+      .myInput:focus {
+        outline: none;
+        border-bottom: 1px solid #000;
+      }
+      .myButton {
+        border: none;
+        padding: 10px 5px;
+        font-size: 16px;
+        font-weight: 900;
+        margin: 10px 5%;
+        background-color: black;
+        color: white;
+        transition: all 1s;
+        cursor: pointer;
+      }
+      .myButton:hover {
+        background-color: white;
+        color: black;
+        outline: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loginBox">
+      <form id="loginForm">
+        <input
+          class="myInput"
+          type="email"
+          class="inputBox"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <input
+          class="myInput"
+          type="password"
+          class="inputBox"
+          name="password"
+          placeholder="Enter your password"
+        />
+        <button class="myButton">Login</button>
+      </form>
+      <hr />
+      <div class="container" style="text-align: center;">
+        <a href="forgot-pass.html">Forgot my password</a>
+        <a href="register.html">New user ? click here to register</a>
+      </div>
+    </div>
+  </body>
+</html>
