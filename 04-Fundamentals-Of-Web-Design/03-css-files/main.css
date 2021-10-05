@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url("images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+#loginBox {
+  position: absolute;
+  left: 35%;
+  right: 35%;
+  top: 30%;
+  bottom: 30%;
+  background: white;
+  padding: 10px;
+  overflow: hidden;
+}
+.loginAvatar {
+  text-align: center;
+}
+.loginAvatar h1 {
+  background-color: #ababab;
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 90px;
+  border-radius: 90px;
+  color: white;
+}
+#loginForm {
+  display: flex;
+  flex-direction: column;
+}
+.myInput {
+  font-size: 16px;
+  padding: 3px 5px;
+  border: none;
+  border-bottom: 1px solid #dfdfdf;
+  margin: 10px 5%;
+}
+.myInput:active,
+.myInput:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+.myButton {
+  border: none;
+  padding: 10px 5px;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 10px 5%;
+  background-color: black;
+  color: white;
+  transition: all 400ms;
+  cursor: pointer;
+}
+.myButton:hover {
+  background-color: white;
+  color: black;
+  outline: 1px solid black;
+}
+@media screen and (max-width: 960px) {
+  #loginBox {
+    left: 10%;
+    right: 10%;
+  }
+}

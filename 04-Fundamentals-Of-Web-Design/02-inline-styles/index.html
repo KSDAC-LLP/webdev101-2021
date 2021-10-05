@@ -31,6 +31,7 @@
         bottom: 30%;
         background: white;
         padding: 10px;
+        overflow: hidden;
       }
       .loginAvatar {
         text-align: center;
@@ -78,6 +79,12 @@
         color: black;
         outline: 1px solid black;
       }
+      @media screen and (max-width: 960px) {
+        #loginBox {
+          left: 10%;
+          right: 10%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -103,7 +110,7 @@
         <button class="myButton">Login</button>
       </form>
       <hr />
-      <div class="container" style="text-align: center;">
+      <div class="container" style="text-align: center">
         <a href="forgot-pass.html">Forgot my password</a>
         <a href="register.html">New user ? click here to register</a>
       </div>
