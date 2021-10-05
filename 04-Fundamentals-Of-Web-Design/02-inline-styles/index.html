@@ -32,6 +32,20 @@
         background: white;
         padding: 10px;
       }
+      .loginAvatar {
+        text-align: center;
+      }
+      .loginAvatar h1 {
+        background-color: #ababab;
+        display: inline-block;
+        height: 90px;
+        width: 90px;
+        font-size: 40px;
+        font-weight: 100;
+        line-height: 90px;
+        border-radius: 90px;
+        color: white;
+      }
       #loginForm {
         display: flex;
         flex-direction: column;
@@ -52,11 +66,11 @@
         border: none;
         padding: 10px 5px;
         font-size: 16px;
-        font-weight: 900;
+        font-weight: 100;
         margin: 10px 5%;
         background-color: black;
         color: white;
-        transition: all 1s;
+        transition: all 400ms;
         cursor: pointer;
       }
       .myButton:hover {
@@ -68,6 +82,9 @@
   </head>
   <body>
     <div id="loginBox">
+      <div class="loginAvatar">
+        <h1>L</h1>
+      </div>
       <form id="loginForm">
         <input
           class="myInput"
