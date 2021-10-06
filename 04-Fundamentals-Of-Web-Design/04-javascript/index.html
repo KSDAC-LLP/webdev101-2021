@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doing stuff with JS</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="pageTitle">Stuff with JS</h1>
+    <div>
+      <input type="number" name="num1" id="num1" value="0" class="formControl"/>
+      <input type="number" name="num2" id="num2" value="0" class="formControl"/>
+      <select id="operation">
+        <option disabled>Select a mathematical operation</option>
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="mult">Multiply</option>
+        <option value="div">Divide</option>
+      </select>
+      <span class="eqSpan">=</span>
+      <span class="resultSpan" id="result"></span>
+    </div>
+    <div>
+      <button onclick="calculate();">Calculate</button>
+    </div>
+  </div>
+  <script>
+    function calculate() {
+      const num1 = parseInt(document.querySelector("#num1").value);
+      const num2 = parseInt(document.querySelector("#num2").value);
+      const operation = document.querySelector("#operation").value;
+      if (!num1 || !num2) {
+        document.querySelector("#result").innerHTML = "Jai Mata Di!!!";
+        return;
+      }
+      switch(operation) {
+        case 'add': {
+          document.querySelector("#result").innerHTML = num1 + num2;
+          break;
+        }
+        case 'sub': {
+          document.querySelector("#result").innerHTML = num1 - num2;
+          break;
+        }
+        case 'mult': {
+          document.querySelector("#result").innerHTML = num1 * num2;
+          break;
+        }
+        case 'div': {
+          document.querySelector("#result").innerHTML = num1 / num2;
+          break;
+        }
+        default: {
+          document.querySelector("#result").innerHTML = "Invalid operation selected";
+          break;
+        }
+      }
+
+    }
+  </script>
+</body>
+</html>
