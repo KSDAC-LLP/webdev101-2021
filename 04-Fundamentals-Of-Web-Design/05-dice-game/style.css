@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: white;
+  width: 700px;
+  margin: 2rem auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3em;
+  color:firebrick;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {}
+
+.row .col img {
+  width: 100%;
+}
+
+#rollBtn {
+  margin: 1rem auto;
+  background: firebrick;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  box-shadow: 1px 1px 4px -1px #000;
+  transition: 700ms all;
+  cursor: pointer;
+}
+#rollBtn:hover {
+  box-shadow: 2px 2px 5px 0px #000;
+}

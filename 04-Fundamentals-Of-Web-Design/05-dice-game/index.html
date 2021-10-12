@@ -9,7 +9,16 @@
 </head>
 <body>
   <div class="container">
-    <h1>Dice Game</h1>
+    <h1 class="title">Dice Game</h1>
+    <div class="row">
+      <div class="col">
+        <img id="dice1" src="images/dice1.png" onclick="handleDiceClick(event)"/>
+      </div>
+      <div class="col">
+        <img id="dice2" src="images/dice4.png" onclick="handleDiceClick(event)"/>
+      </div>
+    </div>
+    <button id="rollBtn" onclick="() => { rollDice(dice1); rollDice(dice2); } ">Roll the Dice</button>
   </div>
   <script type="application/javascript" src="main.js"></script>
 </body>
