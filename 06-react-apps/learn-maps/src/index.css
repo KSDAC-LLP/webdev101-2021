@@ -1,0 +1,361 @@
+/**
+ * CSS Style resets
+ **/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
+  font-size: 17px;
+  line-height: 36px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  background: #f7f7f7;
+}
+body * {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 0.12ch;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 0;
+  padding: 0;
+  color: #66576b;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+h3 {
+  font-size: 1.25em;
+}
+@-ms-viewport {
+  width: device-width;
+}
+
+/* Top Navbar Styles*/
+.topNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  background: #703a81;
+  box-shadow: 0px 2px 4px 0px #8f8f8f;
+}
+.topNav .title {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.topNav .title h1 {
+  font-size: 1.25em;
+  color: white;
+}
+.topNav .menuToggle {
+  display: none;
+  margin-left: auto;
+  color: white;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+.topNav a {
+  text-decoration: none;
+}
+
+/* Content Styles */
+.content {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 3px;
+  transition: all 500ms;
+  border: 1px solid #efefef;
+  box-shadow: 1px 1px 3px 0px #dfdfdf;
+}
+.content p {
+  padding: 1rem 2rem;
+  font-weight: normal;
+  color: #66576b;
+}
+.content.blur {
+  filter: blur(7px);
+}
+
+/* Text styles */
+.justified {
+  text-align: justify;
+}
+.text-left {
+  text-align: left;
+}
+.text-primary {
+  color: #703a81;
+}
+
+/* Home Page Styles */
+.homePortrait {
+  margin: 1rem auto;
+  outline: 1rem solid #fff;
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+}
+.homeHeadline {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 3rem;
+  padding: 1rem 3rem;
+}
+.homeSecHolder {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.homeSecHolder li {
+  margin-inline: 0;
+  padding: 1rem 2rem;
+  font-weight: normal;
+}
+.homeCS {
+  font-size: 0.75em;
+  padding: 0.5rem;
+  margin-inline-end: 1rem;
+  border-radius: 3px;
+  background: #703a81;
+  color: white;
+  box-shadow: 0px 0px 10px 1px #ad6fc1;
+}
+.homeTS .iconList {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 1rem 2rem;
+}
+.homeTS .iconList img {
+  height: 40px;
+  width: 40px;
+  margin-block: 20px;
+  margin-inline: 5px;
+  border-radius: 40px;
+}
+
+/* Post List Styles*/
+.postsList {
+  margin: 0;
+  padding-inline: 1.25rem;
+  list-style: none;
+  text-align: left;
+}
+.postsList li {
+  margin-block: 1.5rem;
+  border-bottom: 1px solid #af98b6;
+  padding: 0.25rem;
+}
+.postsList li a {
+  text-decoration: none;
+}
+.postsList li a:hover {
+  text-decoration: underline;
+}
+.postsList p {
+  line-height: 1.25em;
+  padding: 1rem 0;
+}
+.postsList header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.postsList header h3 {
+  display: inline-flex;
+}
+.postsList header .plDate {
+  font-size: 0.75em;
+}
+
+/* Post/Article styles */
+.content article .ptitle {
+  font-size: 1.75em;
+  margin-block: 1rem;
+}
+.content article hr {
+  margin: 1rem 2rem;
+  border: 1px solid #efefef;
+}
+.content article .postHeader .pfimg {
+  height: 480px;
+  width: auto;
+  margin: 0 auto;
+}
+.content article .pcnt {
+  font-size: 18px;
+  text-align: left;
+  justify-content: flex-start;
+  padding-inline: 2rem;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  margin-block-start: 2rem;
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+footer a img {
+  height: 40px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .topNav .menu {
+    display: none;
+    position: absolute;
+    background: #562066d8;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    top: calc(100vh / 5);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999999;
+    border-radius: 3px;
+  }
+  .topNav .menu.show {
+    display: flex;
+  }
+  .topNav .menu a {
+    color: #e0b1ee;
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .topNav .menuToggle {
+    display: initial;
+  }
+  .content {
+    width: 100%;
+    padding: 0;
+    margin-inline: 0;
+  }
+  .content .homePortrait {
+    height: auto;
+    width: 65%;
+    border-radius: 240px;
+  }
+  .content article .postHeader .pfimg {
+    height: auto;
+    width: 95%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .topNav .menu {
+    display: none;
+    position: absolute;
+    background: #562066d8;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+    top: calc(100vh / 5);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999999;
+    border-radius: 3px;
+  }
+  .topNav .menu.show {
+    display: flex;
+  }
+  .topNav .menu a {
+    color: #e0b1ee;
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .topNav .menuToggle {
+    display: initial;
+  }
+  .content {
+    width: 580px;
+    padding: 1rem 0.5rem;
+  }
+  .content article .postHeader .pfimg {
+    height: auto;
+    width: 90%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .topNav .menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    background: transparent;
+    width: auto;
+  }
+  .topNav .menu a {
+    color: white;
+    text-decoration: none;
+    transition: all 300ms;
+    padding: 0.5rem;
+    margin-right: 5px;
+    border-radius: 2px;
+    font-size: 16px;
+  }
+  .topNav .menu a:hover {
+    background: #e0b1ee;
+    color: #562066;
+  }
+  .topNav .menuToggle {
+    display: none;
+  }
+  .content {
+    width: 748px;
+  }
+  .content article .postHeader .pfimg {
+    width: 640px;
+    border-radius: 3px;
+  }
+
+  footer {
+    justify-content: center;
+  }
+  footer a {
+    margin-inline: 2rem;
+  }
+  footer a img {
+    height: 40px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content {
+    width: 80%;
+  }
+}
